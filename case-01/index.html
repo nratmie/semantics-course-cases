@@ -7,56 +7,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+
+        html {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            font-family: "Roboto", Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .visually-hidden {
+            position: absolute;
+
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+
+            white-space: nowrap;
+
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+
+    </style>
 </head>
 
-<!---->http://aiaiai.ru/<!---->
+<!--http://aiaiai.ru/
+https://fonts.google.com/specimen/Playfair+Display
 
-<style>
-
-    html {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-
-        font-family: "Roboto", Arial, sans-serif;
-        font-size: 14px;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    .visually-hidden {
-        position: absolute;
-
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-
-        white-space: nowrap;
-
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-
-</style>
+поменять картинки и лого шрифт - в отдельный css файл, тк 2 шрифта гуглфонтс
+удалить gвозможно
+-->
 
 <body>
     <header class="main-header">
         <nav class="main-header-nav">
-            <a>
+            <!--<a>
                 <img src="img/logo-black.png" alt="Новости культуры" width="281" height="38">
             </a>
+            удалить возможно
+            -->
+            <h1>Новости культуры</h1>
 
             <ul class="site-navigation">
                 <li class="site-navigation-item">Новости</li>
@@ -73,8 +81,6 @@
     </header>
 
     <main>
-        <h1 class="visually-hidden">Новости культуры</h1>
-
         <section class="headline">
             <h2>
                 <a href="#">
