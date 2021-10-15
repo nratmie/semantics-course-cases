@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Котейка — уютная гостиница для котов и кошек</title>
+    <title>Каталог гостиницы для котов и кошек «Котейка»</title>
 </head>
 
 <!-- https://kenakula.github.io/Koteyka/build/index.html# удалить -->
@@ -11,7 +11,7 @@
 <body>
 <header class="main-header">
     <nav class="main-nav">
-        <a>
+        <a href="index.html">
             <img src="svg/logo.svg" width="63" height="52" alt="Логотип сайта гостиницы для котов и кошек «Котейка»">
         </a>
 
@@ -41,19 +41,25 @@
 </header>
 
 <main>
-    <h1 class="visually-hidden">
+    <h1>
         Наши номера
     </h1>
 
-    <section class="filter">
-        <form>
+    <section class="filters">
+        <h2 class="visually-hidden">
+            Фильтры
+        </h2>
+
+        <form id="filters-form" class="filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
                 <legend>
-                    Цена за сутки, ₽
+                    Цена за сутки, <span>₽</span>
                 </legend>
+                <label for="filter-form-price-from" class="visually-hidden">Цена за сутки, от</label>
+                <input type="text" name="filters-form-price-from" id="filter-form-price-from" placeholder="от 100" value="100">
 
-                <input type="text" placeholder="от 100">
-                <input type="text" placeholder="до 600">
+                <label for="filter-form-price-to" class="visually-hidden">Цена за сутки, до</label>
+                <input type="text" name="filter-form-price-to" id="filter-form-price-to" placeholder="до 600" value="600">
             </fieldset>
 
             <fieldset>
@@ -61,28 +67,29 @@
                     Площадь
                 </legend>
 
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-area-1">
+                    <input type="checkbox" name="filters-form-area" id="filters-form-area-1" checked value="0.63">
                     0,63 м2
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-area-2">
+                    <input type="checkbox" name="filters-form-area" id="filters-form-area-2" checked value="0.90">
                     0,90 м2
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-area-3">
+                    <input type="checkbox" name="filters-form-area" id="filters-form-area-3" checked value="1.13">
                     1,13 м2
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
+
+                <label for="filters-form-area-4">
+                    <input type="checkbox" name="filters-form-area" id="filters-form-area-4" checked value="1.56">
                     1,56 м2
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-area-5">
+                <input type="checkbox" name="filters-form-area" id="filters-form-area-5" checked value="2.56">
                     2,56 м2
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-area-6">
+                <input type="checkbox" name="filters-form-area" id="filters-form-area-6" checked value="2.88">
                     2,88 м2
                 </label>
             </fieldset>
@@ -92,42 +99,217 @@
                     Оснащение номера
                 </legend>
 
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-equipment-empty">
+                    <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-empty" checked value="empty">
                     Пустой номер
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-equipment-sofa">
+                    <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-sofa" checked value="sofa">
                     Лежак
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-equipment-scratiching-post">
+                    <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-scratiching-post" checked value="scratching-post">
                     Когтеточка
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
-                    0,63 м2
+                <label for="filters-form-equipment-playhouse">
+                    <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-playhouse" checked value="playhouse">
                 Игровой комплекс
                 </label>
-                <label for>
-                    <input type="checkbox" checked>
+                <label for="filters-form-equipment-house">
+                    <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-house" checked value="house">
                     Домик
                 </label>
             </fieldset>
+
+            <button type="reset">
+                Сбросить фильтр
+            </button>
         </form>
-
-        <button type="button">
-            Сбросить фильтр
-        </button>
     </section>
 
-    <section class="gallery">
+    <section class="catalog">
+        <h2 class="visually-hidden">
+            Каталог
+        </h2>
 
+        <a href="#" class="sort-asc">
+            По площади
+        </a>
+
+        <ul class="catalog-list">
+            <li class="catalog-list-item">
+                <h3>Эконом</h3>
+                <img alt="Эконом комната">
+                <dl>
+                    <dt>Размеры (ШхГхВ) -</dt>
+                    <dd>90x70x180 см</dd>
+                    <dt>Площадь -</dt>
+                    <dd>0,63 м2</dd>
+                    <dt>Оснащение номера</dt>
+                    <dd>
+                        <ul class="equipment-list">
+                            <li class="equipment list equipment-item-empty">
+                                Пустой номер
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Цена за сутки: </dt>
+                    <dd>100₽</dd>
+                </dl>
+                <a href="card.html">Забронировать</a>
+            </li>
+
+            <li class="catalog-list-item">
+                <h3>Эконом плюс</h3>
+                <img alt="Эконом плюс комната">
+                <dl>
+                    <dt>Размеры (ШхГхВ) -</dt>
+                    <dd>90x100x180 см</dd>
+                    <dt>Площадь -</dt>
+                    <dd>0,90 м2</dd>
+                    <dt>Оснащение номера</dt>
+                    <dd>
+                        <ul class="equipment-list">
+                            <li class="equipment list equipment-item-sofa">
+                                Лежак
+                            </li>
+                            <li class="equipment list equipment-item-scratching-post">
+                                Когтеточка
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Цена за сутки: </dt>
+                    <dd>200₽</dd>
+                </dl>
+                <a href="card.html">Забронировать</a>
+            </li>
+
+            <li class="catalog-list-item">
+                <h3>Комфорт</h3>
+                <img alt="Комфорт комната">
+                <dl>
+                    <dt>Размеры (ШхГхВ) -</dt>
+                    <dd>100х125х180 см</dd>
+                    <dt>Площадь -</dt>
+                    <dd>1,13 м2</dd>
+                    <dt>Оснащение номера</dt>
+                    <dd>
+                        <ul class="equipment-list">
+                            <li class="equipment list equipment-item-sofa">
+                                Лежак
+                            </li>
+                            <li class="equipment list equipment-item-scratching-post">
+                                Когтеточка
+                            </li>
+                            <li class="equipment list equipment-item-playhouse">
+                                Игровой комплекс
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Цена за сутки: </dt>
+                    <dd>250₽</dd>
+                </dl>
+                <a href="card.html">Забронировать</a>
+            </li>
+
+            <li class="catalog-list-item">
+                <h3>Сьют</h3>
+                <img alt="Сьют комната">
+                <dl>
+                    <dt>Размеры (ШхГхВ) -</dt>
+                    <dd>125х125х180 см</dd>
+                    <dt>Площадь -</dt>
+                    <dd>1,56 м2</dd>
+                    <dt>Оснащение номера</dt>
+                    <dd>
+                        <ul class="equipment-list">
+                            <li class="equipment list equipment-item-sofa">
+                                Лежак
+                            </li>
+                            <li class="equipment list equipment-item-scratching-post">
+                                Когтеточка
+                            </li>
+                            <li class="equipment list equipment-item-playhouse">
+                                Игровой комплекс
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Цена за сутки: </dt>
+                    <dd>350₽</dd>
+                </dl>
+                <a href="card.html">Забронировать</a>
+            </li>
+
+            <li class="catalog-list-item">
+                <h3>Люкс</h3>
+                <img alt="Люкс комната">
+                <dl>
+                    <dt>Размеры (ШхГхВ) -</dt>
+                    <dd>160х160х180 см</dd>
+                    <dt>Площадь -</dt>
+                    <dd>2,56 м2</dd>
+                    <dt>Оснащение номера</dt>
+                    <dd>
+                        <ul class="equipment-list">
+                            <li class="equipment list equipment-item-sofa">
+                                Лежак
+                            </li>
+                            <li class="equipment list equipment-item-scratching-post">
+                                Когтеточка
+                            </li>
+                            <li class="equipment list equipment-item-playhouse">
+                                Игровой комплекс
+                            </li>
+                            <li class="equipment list equipment-item-house">
+                                Домик
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Цена за сутки: </dt>
+                    <dd>500₽</dd>
+                </dl>
+                <a href="card.html">Забронировать</a>
+            </li>
+
+            <li class="catalog-list-item">
+                <h3>Супер-люкс</h3>
+                <img alt="Супер-люкс комната">
+                <dl>
+                    <dt>Размеры (ШхГхВ) -</dt>
+                    <dd>180х160х180 см</dd>
+                    <dt>Площадь -</dt>
+                    <dd>2,88 м2</dd>
+                    <dt>Оснащение номера</dt>
+                    <dd>
+                        <ul class="equipment-list">
+                            <li class="equipment list equipment-item-sofa">
+                                Лежак
+                            </li>
+                            <li class="equipment list equipment-item-scratching-post">
+                                Когтеточка
+                            </li>
+                            <li class="equipment list equipment-item-playhouse">
+                                Игровой комплекс
+                            </li>
+                            <li class="equipment list equipment-item-house">
+                                Домик
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Цена за сутки: </dt>
+                    <dd>600₽</dd>
+                </dl>
+                <a href="card.html">Забронировать</a>
+            </li>
+        </ul>
     </section>
 
-    <article>
-
-    </article>
+    <section class="promo">
+        <h2 class="visually-hidden">Акции и предложения</h2>
+        <p>Каждый 7-й день <strong>бесплатно!</strong></p>
+        <p>Акция действует при размещении в номерах "Люкс" и "Супер-Люкс"</p>
+        <a href="#">Забронировать</a>
+    </section>
 </main>
 
 <footer>
@@ -180,7 +362,9 @@
         <h2 class="visually-hidden">
             Дополнительная навигация по сайту
         </h2>
-        <img src="svg/logo.svg" width="46" height="38" alt="Логотип гостиницы «Котейка»">
+        <a href="index.html">
+            <img src="svg/logo.svg" width="46" height="38" alt="Логотип гостиницы «Котейка»">
+        </a>
         <ul class="footer-site-navigation">
             <li>
                 <a href="#">
