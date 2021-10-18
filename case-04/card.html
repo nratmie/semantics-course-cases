@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Номер Супер-Люкс гостиницы для котов и кошек «Котейка»</title>
+    <title>Карточка номера гостиницы для котов и кошек «Котейка»</title>
 </head>
 
 <!-- https://kenakula.github.io/Koteyka/build/index.html# удалить -->
@@ -42,25 +42,93 @@
 
 <main>
     <h1 class="visually-hidden">
-        Страница карточки номера Супер-Люкс
+        Карточка номера Супер-Люкс
     </h1>
 
     <section class="card">
         <h2>Супер-Люкс</h2>
-        <ul>
-            <li>
-                <img>
+
+        <p class="card-photo-full">
+            <img src="img/photo-full.jpg" width="500" height="396" alt="Фото кота в номере Супер-Люкс">
+        </p>
+
+        <ul class="card-photo-preview">
+            <li class="card-photo-preview-item">
+                <img src="img/photo-1.jpg" width="70" height="112" alt="Фото 1">
             </li>
-            <dl>
-                <dt>Размеры (ШхГхВ) - </dt>
-                <dd>180х160х180 см</dd>
-            </dl>
+            <li class="card-photo-preview-item">
+                <img src="img/photo-2.jpg" width="70" height="112" alt="Фото 2">
+            </li>
+            <li class="card-photo-preview-item">
+                <img src="img/photo-3.jpg" width="70" height="112" alt="Фото 3">
+            </li>
         </ul>
+
+        <dl>
+            <dt>Размеры (ШхГхВ) - </dt>
+            <dd>180х160х180 см</dd>
+
+            <dt>Площадь - </dt>
+            <dd>2,88 м2</dd>
+
+            <dt>Оснащение номера</dt>
+            <dd>
+                <ul class="equipment-list">
+                    <li class="equipment-item equipment-item-sofa">
+                        Лежак
+                    </li>
+                    <li class="equipment-item equipment-item-house">
+                        Домик
+                    </li>
+                    <li class="equipment-item equipment-item-playhouse">
+                        Игровой комплекс - 3 яруса
+                    </li>
+                    <li class="equipment-item equipment-item-scratching-post">
+                        Когтеточка
+                    </li>
+                </ul>
+            </dd>
+
+            <dt>Цена за сутки: </dt>
+            <dd>600₽</dd>
+        </dl>
+
         <a href="#">Забронировать</a>
     </section>
 
-    <section class="other">
+    <section class="room-reservation">
+        <h2>Другие номера</h2>
 
+        <section class="room-reservation-description">
+            <h3>
+                Комфорт
+            </h3>
+            <img src="img/photo-order-2.jpg" width="600" height="404" alt="Номер Комфорт">
+
+            <dl class="description-list">
+                <dt>Площадь - </dt>
+                <dd>1,13 м2</dd>
+
+                <dt>Размеры (ШхГхВ) - </dt>
+                <dd>100х125х180 см</dd>
+
+                <dt>Цена за сутки: </dt>
+                <dd>250₽</dd>
+            </dl>
+        </section>
+
+        <section class="room-reservation-form">
+            <h3>
+                Забронировать номер
+            </h3>
+            <form id="reservation-form" action="#" method="post">
+                <label for="reservation-form-name" class="visually-hidden">
+                    Ваше имя
+                </label>
+                <input type="text">
+
+            </form>
+        </section>
     </section>
 </main>
 
