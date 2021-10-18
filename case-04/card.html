@@ -125,8 +125,40 @@
                 <label for="reservation-form-name" class="visually-hidden">
                     Ваше имя
                 </label>
-                <input type="text">
+                <input type="text" name="reservation-form-name" id="reservation-form-name" placeholder="Ваше имя">
 
+                <label for="reservation-form-pet" class="visually-hidden">
+                    Имя Питомца
+                </label>
+                <input type="text" name="reservation-form-pet" id="reservation-form-pet" placeholder="Имя Питомца">
+
+                <label for="reservation-form-phone" class="visually-hidden">
+                    Телефон
+                </label>
+                <input type="text" name="reservation-form-phone" id="reservation-form-phone" placeholder="Телефон">
+
+                <label for="reservation-form-email" class="visually-hidden">
+                    E-mail
+                </label>
+                <input type="text" name="reservation-form-email" id="reservation-form-email" placeholder="E-mail">
+
+                <p>
+                    <label for="reservation-form-date-arrival">
+                        Дата заезда с
+                    </label>
+                    <input type="text" name="reservation-form-date-arrival" id="reservation-form-date-arrival"
+                           placeholder="26.01.2021">
+
+                    <label for="reservation-form-date-departure">
+                        по
+                    </label>
+                    <input type="text" name="reservation-form-date-departure" id="reservation-form-date-departure"
+                           placeholder="26.02.2021"
+                </p>
+
+                <button type="submit">
+                    Отправить заявку
+                </button>
             </form>
         </section>
     </section>
