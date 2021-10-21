@@ -20,17 +20,17 @@
                         </a>
                     </li>
                     <li class="site-navigation-item">
-                    <a href="#">
+                    <a href="#features">
                             Преимущества
                         </a>
                     </li>
                     <li class="site-navigation-item">
-                    <a href="#">
+                    <a href="#services">
                             Наши услуги
                         </a>
                     </li>
                     <li class="site-navigation-item">
-                    <a href="#">
+                    <a href="#reviews">
                             Отзывы
                         </a>
                     </li>
@@ -219,21 +219,100 @@
                 </ol>
             </section>
 
-            <section class="feedback">
-                <h2 class="visually-hidden">
-                    Форма обратной связи
+            <section class="order-form">
+                <h2>
+                    Мечтаете об интерьере от BRUME?
                 </h2>
+                <p>
+                    Оставьте контактные данные, менеджер свяжется с вами в течение 15 минут для уточнения всех деталей
+                </p>
+
+                <form action="#" method="post">
+                    <label for="name" class="visually-hidden">
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Имя*" required>
+
+                    <label for="phone" class="visually-hidden">
+                    </label>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон*" required>
+
+                    <label for="email" class="visually-hidden">
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+
+                    <button type="submit">
+                        Отправить
+                    </button>
+                </form>
+
+                <p>
+                    Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных
+                </p>
             </section>
 
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <h2 class>
                     Отзывы наших клиентов
                 </h2>
+
+                <ul class="reviews-list">
+                    <li class="reviews-list-item">
+                        <blockquote>
+                            <cite>
+                                Александра Холодная
+                            </cite>
+                            <p>
+                                Услуга: интерьер детской
+                            </p>
+                            <p>
+                                Спасибо студии за замечательный интерьер для моей 4-хлетней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как мы и хотели. В следующий раз обратимся к BRUME!
+                            </p>
+                            <img src="img/photo-1.jpg" width="318" height="284" alt="Александра Холодная">
+                        </blockquote>
+                    </li>
+                </ul>
+
+                <div class="slider-control">
+                    <button type="button" class="slider-button active-button">
+                        Первый слайд
+                    </button>
+                    <button type="button" class="slider-button">
+                        Второй слайд
+                    </button>
+                    <button type="button" class="slider-button">
+                        Третий слайд
+                    </button>
+                    <button type="button" class="slider-button">
+                        Четвертый слайд
+                    </button>
+                </div>
             </section>
         </main>
 
-        <footer>
+        <footer class="main-footer">
+            <p class="copyright">
+                BRUME Interior, 2021 &copy;
+            </p>
 
+            <p class="copyright">
+                HolodnayaDesign
+            </p>
+
+            <a class="logo">
+                <img src="img/logo.png" width="70" height="40" alt="Логотип дизайн студии BRUME">
+            </a>
+
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a href="#">Вконтакте</a>
+                </li>
+                <li class="social-list-item">
+                    <a href="#">Instagram</a>
+                </li>
+                <li class="social-list-item">
+                    <a href="#">Facebook</a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
