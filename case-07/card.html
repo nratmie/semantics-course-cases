@@ -133,27 +133,6 @@
             <li class="reviews-item">
                 <blockquote>
                     <img src="#" alt="Валерия Гришаева">
-                    <cite>Валерия Гришаева, </cite>
-                    <time datetime="2019-09-10">10.09.2019</time>
-                    <p>Это было мое первое восхождение на вершину. Но я справилась! Спасибо большое нашим гидам Алексею и Михаилу! Хочу отметить отличную организацию тура, каждая деталь была продумана. Обязательно повторю тур еще раз!</p>
-                    <ul class="user-photos">
-                        <li>
-                            <img src="#" alt="Фото с восхождения 1">
-                        </li>
-                        <li>
-                            <img src="#" alt="Фото с восхождения 2">
-                        </li>
-                        <li>
-                            <img src="#" alt="Фото с восхождения 3">
-                        </li>
-                    </ul>
-
-                </blockquote>
-            </li>
-
-            <li class="reviews-item">
-                <blockquote>
-                    <img src="#" alt="Валерия Гришаева">
                     <cite>Екатерина Иванцова</cite>
                     <time datetime="2019-08-06">06.08.2019</time>
                     <p>Понравилось абсолютно все, организация на высшем уровне. Все оборудование брала напрокат, вышло недорого. Маршрут был сложный для меня, но благодаря гидам все сложилась удачно.</p>
@@ -180,45 +159,84 @@
         <form class="add-review" action="#" method="POST">
             <label for="add-review-name" class="visually-hidden">Имя</label>
             <input type="text" id="add-review-name" name="add-review-name" placeholder="Имя">
-            <textarea></textarea>
 
-            <button type="button">+ Прикрепить фото</button>
-            
-            <span>img_223.jpg</span>
+            <label for="add-review-email" class="visually-hidden">E-mail</label>
+            <input type="text" id="add-review-email" name="add-review-email" placeholder="E-mail">
+
+            <label for="add-review-message" class="visually-hidden">Отзыв</label>
+            <textarea id="add-review-message" name="add-review-message" placeholder="Напишите ваш отзыв"></textarea>
+
+            <label for="add-review-user-photos">Прикрепить фото</label>
+            <input type="file" id="add-review-user-photos" name="add-review-user-photos" accept=".jpg, .jpeg, .png">
+
+            <ul class="attach-photos">
+                <li>img_223.jpg</li>
+            </ul>
 
             <button type="submit">Отправить</button>
         </form>
     </section>
 
     <section class="similar-tours">
+        <h2>Похожие туры</h2>
+        <ul class="tours">
+            <li class="tours-item">
+                <h3>
+                    <a href="card.html">Эльбрус</a>
+                </h3>
+                <img src="#" alt="Группа туристов уходит в снежные горы">
+                <p>Россия</p>
 
-    </section>
-
-    <section class="contacts">
-        <h2>Контакты</h2>
-        <img src="#" alt="Карта с адресом офиса"
-        <dl class="contacts-list">
-            <dt>Адрес:</dt>
-            <dd>Санкт-Петербург, ул. Большая Конюшенная, 19</dd>
-            <dt>Телефон:</dt>
-            <dd>8 (800) 777-33-25</dd>
-            <dt>E-mail:</dt>
-            <dd>info@mountain.ru</dd>
-            <dt>Социальные сети:</dt>
-            <dd>
-                <ul class="social-list">
-                    <li>
-                        <a href="#">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="#">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="#">Twitter</a>
-                    </li>
+                <ul>
+                    <li>5642 м</li>
+                    <li>10 дней</li>
+                    <li>от 25 000 ₽</li>
                 </ul>
-            </dd>
-        </dl>
+                <p>Средний уровень</p>
+                <button type="button">
+                    <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+            </li>
+
+            <li class="tours-item">
+                <h3>
+                    <a href="card.html">Белуха</a>
+                </h3>
+                <img src="#" alt="Снежные вершины горы Белуха">
+                <p>Россия</p>
+
+                <ul>
+                    <li>4506 м</li>
+                    <li>12 дней</li>
+                    <li>от 45 000 ₽</li>
+                </ul>
+                <p>Средний уровень</p>
+                <button type="button">
+                    <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+            </li>
+
+            <li class="tours-item">
+                <h3>
+                    <a href="card.html">Килиманджаро</a>
+                </h3>
+                <img src="#" alt="Острые пики заснеженных вершин горы Килиманджаро">
+                <p>Танзания</p>
+
+                <ul>
+                    <li>5895 м</li>
+                    <li>4 дня</li>
+                    <li>от 55 000 ₽</li>
+                </ul>
+                <p>Простой уровень</p>
+                <button type="button">
+                    <span class="visually-hidden">Добавить в избранное</span>
+                </button>
+            </li>
+        </ul>
+
+        <button type="button">Назад</button>
+        <button type="button">Вперёд</button>
     </section>
 </main>
 
@@ -231,7 +249,7 @@
         <img src="#" alt="Логотип турклуба Mountain">
     </a>
 
-    <a href="#">
+    <a class="policy" href="#">
         Политика конфиденциальности
     </a>
 </footer>
