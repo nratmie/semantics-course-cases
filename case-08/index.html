@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Гироскутер Rizor</title>
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Гироскутер Rizor</title>
+    </head>
 
     <body>
-        <header>
-            <img class="logo" src="img/logo.png" alt="Логотип компании Rizor">
+        <header class="main-header">
+            <nav class="main-nav">
+                <a class="logo">
+                    <img class="logo" src="img/logo.png" width="156" height="39" alt="Логотип компании Rizor">
+                </a>
 
-            <ul class="site-navigation">
+                <ul class="site-navigation">
                 <li class="site-navigation-item">
                     <a href="#features">Преимущества</a>
                 </li>
                 <li class="site-navigation-item">
-                    <a href="#features">Характеристики</a>
+                    <a href="#parameters">Характеристики</a>
                 </li>
                 <li class="site-navigation-item">
                     <a href="#reviews">Отзывы</a>
@@ -24,6 +27,7 @@
                     <a href="#comparison">Сравнение моделей</a>
                 </li>
             </ul>
+            </nav>
         </header>
 
         <main>
@@ -102,28 +106,217 @@
                             <th>Скоростных режима</th>
                         </tr>
                     </table>
+
+                    <video class="tour-video" poster="img/photo-8.jpg" width="1075" height="750">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                    <button type="button">Смотреть видео</button>
+                </section>
+
+                <section class="electronics">
+                    <h3>Электроника</h3>
+                    <p>При эксплуатации <b>Rizor Hovertrax 4.0</b> нельзя не отметить плавность торможения и быстроту набора скорости.</p>
+                    <p>В копилку «плюсов» нужно отнести и безупречную отзывчивость электронной начинки.</p>
+                    <ul>
+                        <li>
+                            <p>Бесшумный двигатель</p>
+                        </li>
+                        <li>
+                            <p>Встроенный гироскоп</p>
+                        </li>
+                    </ul>
+                    <video class="tour-video" poster="img/photo-11.jpg" width="400" height="280">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                    <button type="button">Смотреть видео</button>
+                </section>
+
+                <section class="battery">
+                    <h3>Аккумулятор</h3>
+                    <p>Имеет съемную аккумуляторную батарею. Это позволяет легко вытащить сам АКБ и, к примеру, перевезти весь гироборд в самолёте – это кстати единственный гироскутер, с которым проходит такой «трюк», да и есть документы, подтверждающие лицензию на его производство и использование.</p>
+                    <img src="img/photo-45.png" width="367" height="300" alt="Аккумулятор">
+                    <table>
+                        <tr>
+                            <td>25 км</td>
+                            <td>2 ч</td>
+                        </tr>
+                        <tr>
+                            <th>Запас хода</th>
+                            <th>Время зарядки</th>
+                        </tr>
+                    </table>
                 </section>
             </section>
 
-            <section class="" id="">
-
+            <section class="parameters" id="parameters">
+                <h2>Характеристики</h2>
+                <p>Rizor Hovertrax 4.0</p>
+                <dl>
+                    <dt>Корпус</dt>
+                    <dd>выполнен из прочного пластика, и имеет приятную LED подсветку, дополняющую дизайн. Платформы для ног покрыты антискользящим покрытием.</dd>
+                    
+                    <dt>Колеса</dt>
+                    <dd><span>Rizor Hovertrax 4.0</span> получил относительно небольшие, но, в целом, среднего диаметра колёса в 6,5 дюймов.</dd>
+                    
+                    <dt>Мощность</dt>
+                    <dd>двигатель в <span>350 Вт</span> обеспечивает комфортное и безопасное передвижение при максимальной скорости в <span>13 км/ч</span>.</dd>
+                    <dt>Вес</dt>
+                    <dd>небольшой вес, приблизительно в <span>12 кг</span>, позволяет относительно компактно переносить гироборд с собой.</dd>
+                </dl>
             </section>
 
-            <section class="target-group">
+            <section class="audience">
+                <h2>Для кого</h2>
+                <p>При максимально выдерживаемой нагрузке в 100 кг отлично подойдёт как для подрастающего поколения, так и для более взрослых «наездников»</p>
+                <p>Это единственный гироскутер со специальным детским режимом езды. Он обеспечивает плавность движений и помогает избежать большинство ошибок управления.</p>
 
+                <ul>
+                    <li>
+                        <p>Для любого возраста</p>
+                    </li>
+                    <li>
+                        <p>Безопасный режим</p>
+                    </li>
+                </ul>
+
+                <img src="img/photo-13.jpg" width="1075" height="750" alt="Rizor Hovertrax 4.0">
             </section>
 
             <section class="reviews" id="reviews">
+                <h2>Отзывы</h2>
+                <section class="user-reviews">
+                    <h3>Оценки пользователей</h3>
+                    <blockquote>
+                        <img src="img/photo-2.jpg" width="370" height="381" alt="Семён Константинопольский">
+                        <cite>Семён Константинопольский</cite>
+                        <p>Скутер понравился, пластик выглядит прочным, и подсветка приятная. Батарея держит примерно час активного катания даже спустя год. Платформа прорезиненная, сцепление хорошее, но если гонять на максималке, всё равно можно упасть.</p>
+                        <table>
+                            <tr>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <th>Общая оценка</th>
+                                <th>Надёжность</th>
+                                <th>Безопасность</th>
+                                <th>Внешний вид</th>
+                            </tr>
+                        </table>
+                    </blockquote>
+                    <button type="button">Назад</button>
+                    <button type="button">Вперед</button>
+                </section>
 
-            </section>
+                <section class="add-review">
+                    <h3>Ваша оценка</h3>
+                    <p>Оцените использование <span>Rizor 4.0</span> и получите скидку <span>10%</span> на покупку второго гироскутера</p>
 
-            <section class="user-review">
+                    <form action="#" method="POST">
+                        <label for="name">Имя и фамилия</label>
+                        <input id="name" type="text" name="name" placeholder="Семён Константинопольский">
 
+                        <label for="message">Текст отзыва</label>
+                        <textarea id="message" name="message" placeholder="Ваш отзыв"></textarea>
+
+                        <label for="rating">Общая оценка</label>
+                        <select id="rating" name="rating">
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                        </select>
+
+                        <label for="surety">Надёжность</label>
+                        <select id="surety" name="surety">
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                        </select>
+
+                        <label for="safety">Безопасность</label>
+                        <select id="safety" name="safety">
+                            <option value="5">5</option>
+                            <option value="4" selected>4</option>
+                            <option value="3">3</option>
+                        </select>
+
+                        <label for="appearance">Внешний вид</label>
+                        <select id="appearance" name="appearance">
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="submit">Отправить отзыв</button>
+                    </form>
+                </section>
             </section>
 
             <section class="comparison" id="comparison">
+                <h2>Сравнение моделей</h2>
+                <img src="img/photo-4.jpg" width="845" height="800" alt="Фото модели 4.0">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>4.0</th>
+                        <th>3.0</th>
+                    </tr>
 
+                    <tr>
+                        <th>Вес</th>
+                        <td>12 кг</td>
+                        <td>16 кг</td>
+                    </tr>
+
+                    <tr>
+                        <th>Нагрузка</th>
+                        <td>до 100 кг</td>
+                        <td>до 80 кг</td>
+                    </tr>
+
+                    <tr>
+                        <th>Скорость</th>
+                        <td>до 13 км/ч</td>
+                        <td>до 9 км/ч</td>
+                    </tr>
+
+                    <tr>
+                        <th>Мощность</th>
+                        <td>350 Вт</td>
+                        <td>200 Вт</td>
+                    </tr>
+
+                    <tr>
+                        <th>Время работы</th>
+                        <td>115 минут</td>
+                        <td>95 минут</td>
+                    </tr>
+
+                    <tr>
+                        <th>Самобалансировка</th>
+                        <td>+</td>
+                        <td>+</td>
+                    </tr>
+
+                    <tr>
+                        <th>Режим обучения</th>
+                        <td>+</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <th>Гарантия</th>
+                        <td>6 месяцев</td>
+                        <td>3 месяца</td>
+                    </tr>
+                </table>
+
+                <a href="#">Заказать Rizor 4.0</a>
             </section>
         </main>
+
+        <footer class="main-footer">
+            <p class="copyright">&copy; All rights reserved, 2017</p>
+        </footer>
     </body>
 </html>
